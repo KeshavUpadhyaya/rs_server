@@ -20,13 +20,13 @@ impl FromStr for Method {
             "GET" => Ok(Self::GET),
             "DELETE" => Ok(Self::DELETE),
             "PUT" => Ok(Self::PUT),
-            "POST" => Ok(Self::POST)
+            "POST" => Ok(Self::POST),
             "HEAD" => Ok(Self::HEAD),
             "CONNECT" => Ok(Self::CONNECT),
             "OPTIONS" => Ok(Self::OPTIONS),
             "TRACE" => Ok(Self::TRACE),
             "PATCH" => Ok(Self::PATCH),
-            _ => Err(MethodError)
+            _ => Err(MethodError),
         }
     }
 }
