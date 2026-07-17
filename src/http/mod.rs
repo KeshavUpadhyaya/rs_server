@@ -1,3 +1,4 @@
+pub use query_string::QueryString;
 pub use request::Request;
 
 pub mod method;
