@@ -3,10 +3,12 @@ use std::collections::HashMap;
 // example query string
 // a=1&b===&c=1&c=2
 
+#[derive(Debug)]
 pub struct QueryString<'buf> {
     data: HashMap<&'buf str, Value<'buf>>,
 }
 
+#[derive(Debug)]
 pub enum Value<'buf> {
     Single(&'buf str),
     Multiple(Vec<&'buf str>), // heap allocated (can grow unlike a normal array which requires a size to be specified)
